@@ -1,0 +1,270 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.app_registration{
+
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+
+  &:hover {
+    border-radius: 0% 0% 20% 20% / 0% 0% 2% 2% ;
+    box-shadow: 10px 10px rgba(0,0,0,.25);
+  }
+  margin: 0 auto;
+  max-width: 600px;
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 10px;
+  .Registration{
+    margin: 8px;
+    display: flex;
+    #identifical_num{
+      margin-left: 100px;
+    }
+    .name_id{
+      display: flex;
+    }
+
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 19px;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2.5px;
+    bottom: 2.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #15b300;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #15b300;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
+
+
+
+.btnRight{
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  width: 100px;
+  height: 30px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+
+}
+.checkboxes
+
+.btnRight:active {
+  background-color: #ffffff;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.btnLeft{
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  width: 100px;
+  height: 30px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+
+}
+
+.btnLeft:active {
+  background-color: #000000;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+.btns{
+  margin-bottom: 15px;
+  margin-left: 380px;
+}
+.checkboxes{
+  color: dimgrey;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  input{
+    margin-left: 9px;
+    width: 20px;
+    height: 20px;
+  }
+  .verified{
+    margin-left: 220px;
+    display: flex;
+  }
+  .Notification{
+    margin-left: 50px;
+    display: flex;
+  }
+}
+.Attaching_document{
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  span{
+    margin-top: 5px;
+    margin-right: 200px;
+  }
+  button{
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    background-color: #2ea44f;
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    &:hover{
+      background-color: #ccc8c8;
+      color: #000000;
+      transition: .4s;
+
+    }
+  }
+}
+.Comment{
+  padding: 10px;
+  input{
+    width: 570px;
+    height: 80px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+  }
+}
+.card_id{
+  padding: 10px;
+  b{
+    margin-right: 10px;
+  }
+  input{
+    background-color: #e4e4e4;
+
+    margin-top: 7px;
+    width: 570px;
+    height: 30px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+  }
+}
+.name_surname{
+  display: flex;
+  padding: 10px;
+  .Sub_registraion{
+    b{
+      margin-right: 7px;
+    }
+  }
+  input{
+    background-color: #e4e4e4;
+    margin-top: 7px;
+    outline: none;
+    margin-right: 40px;
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    &.invalid {
+      border-color: red;
+    }
+  }
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  #Citizenship{
+    background-color: #e4e4e4;
+    margin-top: 7px;
+    margin-right: 40px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+  }
+  #identifical_gender{
+    margin-top: 7px;
+    margin-right: 40px;
+    width: 250px;
+    height: 35px;
+    #switch_gen_male{
+      margin-top: 7px;
+      margin-left: 50px;
+    }
+    b{
+      margin-left: 5px;
+    }
+  }
+}

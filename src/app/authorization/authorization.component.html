@@ -1,0 +1,177 @@
+<header>
+</header>
+<main>
+  <div class="app_registration">
+
+
+    <div class="Registration_info">
+
+      <section class="name_surname">
+        <section class="Sub_registraion">
+          <section class="check_info">
+            <b>Name</b>
+            <label class="switch">
+              <input type="checkbox"  [(ngModel)]="nameToggleChecked">
+              <span class="slider round"></span>
+            </label>
+
+          </section>
+          <input  type="text"   [disabled]="!nameToggleChecked">
+        </section>
+
+        <section class="Sub_registraion">
+          <section class="check_info">
+            <label><b>Surname</b></label>
+            <label class="switch">
+              <input type="checkbox"  [(ngModel)]="surnametoggleChecked">
+              <span class="slider round"></span>
+            </label>
+          </section>
+          <input type="text"  [disabled]="!surnametoggleChecked" >
+        </section>
+
+      </section>
+
+      <section class="name_surname">
+        <section class="Sub_registraion">
+          <section class="check_info">
+            <label><b>Gender</b></label>
+            <label class="switch">
+              <input [(ngModel)]="gendertoggleChecked"  type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </section>
+          <section id="identifical_gender">
+            <label class="switch" id="switch_gen_female">
+              <input type="checkbox"  [disabled]="!gendertoggleChecked">
+              <span class="slider round"></span>
+            </label>
+            <b>Female</b>
+            <label class="switch" id="switch_gen_male">
+              <input type="checkbox"  [disabled]="!gendertoggleChecked">
+              <span class="slider round"></span>
+            </label>
+            <b>Male</b>
+
+          </section>
+        </section>
+
+        <section class="Sub_registraion">
+          <section class="check_info">
+            <label><b>Date of birth</b></label>
+            <label class="switch">
+              <input type="checkbox"  [(ngModel)]="dateofbirthtoggleChecked">
+              <span class="slider round"></span>
+            </label>
+          </section>
+            <input type="DD/MM/YYYY" [disabled]="!dateofbirthtoggleChecked">
+        </section>
+      </section>
+      <section class="name_surname">
+        <section class="Sub_registraion">
+        <section class="check_info">
+          <label><b>Citizenship</b></label>
+          <label class="switch">
+            <input type="checkbox" #toggle1 (change)="toggle2.checked = toggle1.checked" [(ngModel)]="toggleChecked">
+            <span class="slider round"></span>
+          </label>
+
+        </section>
+        <select  [disabled]="!toggleChecked" name="Citizenship" id="Citizenship"
+         [(ngModel)]="selectedCitizenship" (change)="logInputOnChange($event)">
+            <option value=""></option>
+          <option value="Georgia">Georgia</option>
+          <option value="United Arab Emirates">United Arab Emirates</option>
+          <option value="Germany">Germany</option>
+          <option value="New Zealand">New Zealand</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Finland">Finland</option>
+          <option value="Norway">Norway</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Italy">Italy</option>
+
+        </select>
+        </section>
+
+        <section class="Sub_registraion">
+          <section  class="check_info">
+            <label><b>Personal ID</b></label>
+            <label class="switch" >
+              <input type="checkbox" #toggle2 [(ngModel)]="idtoggleChecked" >
+              <span class="slider round"></span>
+            </label>
+        </section>
+        <input [disabled]="!idtoggleChecked" type="text" id="Citizenship_id" [(ngModel)]="inputValue" (input)="logInputOnChange($event)" [class.invalid]="!isInputValid" />
+        <div *ngIf="!isInputValid" class="error-message">Only 11 digits are allowed</div>
+
+      </section>
+      </section>
+      <section class="name_surname">
+             <section class="Sub_registraion">
+        <section class="check_info">
+          <label><b>Mobile Phone</b></label>
+          <label class="switch">
+            <input type="checkbox" [(ngModel)]="phonetoggleChecked">
+            <span class="slider round"></span>
+          </label>
+        </section>
+        <input type="text" [disabled]="!phonetoggleChecked">
+      </section>
+
+      <section class="Sub_registraion">
+        <section class="check_info">
+          <b>Mail</b>
+          <label class="switch">
+            <input type="checkbox" [(ngModel)]="mailtoggleChecked">
+            <span class="slider round"></span>
+          </label>
+        </section>
+        <input type="text" [disabled]="!mailtoggleChecked">
+      </section>
+      </section>
+
+
+      <section class="card_id">
+        <section class="check_info">
+          <label><b>Card ID</b></label>
+          <label class="switch">
+            <input type="checkbox" [(ngModel)]="cardIDtoggleChecked">
+            <span class="slider round"></span>
+          </label>
+        </section>
+        <input type="text" [disabled]="!toggleChecked">
+      </section>
+
+      <section class="Comment">
+        <label><b>Comments</b></label><br>
+        <input type="text" required>
+      </section>
+
+      <section class="Attaching_document">
+        <span>Attaching Document *</span>
+        <button>Upload</button>
+      </section>
+
+
+      <section class="checkboxes">
+
+        <section class="Notification">
+          <span>Notificaion(sms)</span>
+          <input type="checkbox">
+        </section>
+
+        <section class="verified">
+          <span>verified</span>
+          <input type="checkbox">
+        </section>
+
+      </section>
+
+      <section class="btns">
+        <button class="btnLeft">Cancel</button>
+        <button class="btnRight">Add</button>
+
+      </section>
+    </div>
+</div>
+</main>
